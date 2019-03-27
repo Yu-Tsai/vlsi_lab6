@@ -20,9 +20,8 @@ module RAM_tb;
   initial clk=1'b0;
   always #10 clk=~clk;
   initial begin
-        read_enable=1'b0;   write_enable=1'b0;
-        address=16'd0;    data_in=24'h0;
-    #20 read_enable=1'b0;   write_enable=1'b0;
+        read_enable=1'b0; write_enable=1'b0; address=16'd0; data_in=24'h0;
+    //#20 read_enable=1'b0; write_enable=1'b0;
     #20 write_enable=1'b1; address = 16'd0; data_in=24'h00_0afc;
     #20 write_enable=1'b1; address = 16'd1887; data_in=24'h00_b031;
     #20 write_enable=1'b1; address = 16'd22453; data_in=24'hf0_0005;
@@ -32,7 +31,22 @@ module RAM_tb;
     #20 write_enable=1'b1; address = 16'd51; data_in=24'hff_ffff;
     #20 write_enable=1'b1; address = 16'd16388; data_in=24'h00_046a;
     #20 write_enable=1'b1; address = 16'd65535; data_in=24'hc1_0dd3;
-
+    #20 write_enable=1'b0; read_enable=1'b1; address=16'd70; data_in=24'h00_0000;
+    #20 read_enable=1'b1; address=16'd299;
+    #20 read_enable=1'b1; address=16'd0;
+    #20 read_enable=1'b1; address=16'd1888;
+    #20 read_enable=1'b1; address=16'd308;
+    #20 read_enable=1'b1; address=16'd51;
+    #20 read_enable=1'b1; address=16'd22453;
+    #20 read_enable=1'b1; address=16'd97;
+    #20 read_enable=1'b0; write_enable=1'b1; address = 16'd74; data_in=24'h00_1fc3;
+    #20 write_enable=1'b1; address = 16'd1888; data_in=24'hed_2a24;
+    #20 write_enable=1'b0; read_enable=1'b1; address=16'd16388; data_in=24'h00_0000;
+    #20 read_enable=1'b0; write_enable=1'b1; address = 16'd65535; data_in=24'h00_0123;
+    #20 write_enable=1'b0; read_enable=1'b1; address=16'd74; data_in=24'h00_0000;
+    #20 read_enable=1'b0; write_enable=1'b1; address = 16'd45294; data_in=24'h00_00cc;
+    #20 write_enable=1'b0; read_enable=1'b1; address=16'd65535; data_in=24'h00_0000;
+    #20 read_enable=1'b1; address=16'd45294;
     // Display result
     //#20 for(i=0;i<16;i=i+1)
         //$monitor($time, " RAM[%d]=%h, ", address, ram1.memory[i]);

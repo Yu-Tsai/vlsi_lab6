@@ -6,19 +6,19 @@
 //*************************************************
 
 `timescale 1ns/10ps
+`define romsize 14
+`define wordsize 24
 
 module ROM (CK, A, OE, Q);
 
-/*Please rewrite this example code according to the assignment*/
-
   input         CK;
-  input  [3:0]  A;
+  input  [`romsize-1:0]  A;
   input         OE;
-  output [15:0] Q;
+  output [`wordsize-1:0] Q;
 
-  reg    [15:0] Q;
-  reg    [3:0]  latched_A;
-  reg    [15:0] memory [0:15];
+  reg    [`wordsize-1:0] Q;
+  reg    [`romsize-1:0]  latched_A;
+  reg    [`wordsize-1:0] memory [0:`romsize-1];
 
   always @(posedge CK) begin
     latched_A <= A;
@@ -29,7 +29,7 @@ module ROM (CK, A, OE, Q);
       Q = memory[latched_A];
     end
     else begin
-      Q = 16'hz;  
+      Q = 24'hz;  
     end
   end
 endmodule

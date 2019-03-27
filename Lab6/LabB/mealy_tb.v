@@ -25,10 +25,14 @@ initial clk = 1'b0;
 always #10 clk = ~clk;
 
 initial begin
-
-//
-//please write your code here according to the assignment
-//
+  rst=1'b1;
+  #20 rst=1'b0; din=1'b1;
+  #20 din=1'b1;
+  #20 din=1'b0;
+  #20 din=1'b1;
+  #20 din=1'b0;
+  #20 din=1'b0;
+  #20 din=1'b0;
 
 #20 $finish;
 
