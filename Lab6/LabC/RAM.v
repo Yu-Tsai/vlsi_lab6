@@ -6,20 +6,22 @@
 //*************************************************
 
 `timescale 1ns/10ps
+`define ramsize 16
+`define wordsize 24
 
 module RAM (CK, A, WE, OE, D, Q);
 
 /*Please rewrite this example code according to the assignment*/
 
   input         CK;
-  input  [3:0]  A;
+  input  [`ramsize-1:0]  A;
   input         WE;
   input         OE;
-  input  [15:0] D;
-  output [15:0] Q;
+  input  [`wordsize-1:0] D;
+  output [`wordsize-1:0] Q;
 
-  reg    [15:0] Q;
-  reg    [3:0]  latched_A;
+  reg    [`wordsize-1:0] Q;
+  reg    [`ramsize-1:0]  latched_A;
   reg    [15:0] memory [0:15];
 
   always @(posedge CK) begin
