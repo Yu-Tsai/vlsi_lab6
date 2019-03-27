@@ -1,0 +1,57 @@
+ncverilog(64): 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Mar 27, 2019 at 17:38:21 CST
+ncverilog
+	moore_tb.v
+file: moore_tb.v
+	module worklib.moore:v
+		errors: 0, warnings: 0
+	module worklib.moore_tb:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.moore:v <0x3e40cd9e>
+			streams:   4, words:  1402
+		worklib.moore_tb:v <0x4b2257e7>
+			streams:   9, words:  7864
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  2       2
+		Registers:                6       6
+		Scalar wires:             4       -
+		Always blocks:            4       4
+		Initial blocks:           4       4
+		Pseudo assignments:       3       3
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.moore_tb:v
+Loading snapshot worklib.moore_tb:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+                   0 clk=0, rst=1, din=x, qout=0
+                  10 clk=1, rst=1, din=x, qout=0
+                  20 clk=0, rst=0, din=1, qout=0
+                  30 clk=1, rst=0, din=1, qout=1
+                  40 clk=0, rst=0, din=0, qout=1
+                  50 clk=1, rst=0, din=0, qout=1
+                  60 clk=0, rst=0, din=1, qout=1
+                  70 clk=1, rst=0, din=1, qout=1
+                  80 clk=0, rst=0, din=1, qout=1
+                  90 clk=1, rst=0, din=1, qout=1
+                 100 clk=0, rst=0, din=0, qout=1
+                 110 clk=1, rst=0, din=0, qout=0
+                 120 clk=0, rst=0, din=1, qout=0
+                 130 clk=1, rst=0, din=1, qout=0
+                 140 clk=0, rst=0, din=0, qout=0
+                 150 clk=1, rst=0, din=0, qout=0
+                 160 clk=0, rst=0, din=0, qout=0
+                 170 clk=1, rst=0, din=0, qout=0
+                 180 clk=0, rst=0, din=0, qout=0
+                 190 clk=1, rst=0, din=0, qout=0
+Simulation complete via $finish(1) at time 200 NS + 0
+./moore_tb.v:38 	#20 $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Mar 27, 2019 at 17:38:22 CST  (total: 00:00:01)

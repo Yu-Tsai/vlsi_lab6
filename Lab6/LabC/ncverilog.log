@@ -1,0 +1,53 @@
+ncverilog(64): 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Mar 27, 2019 at 18:13:45 CST
+ncverilog
+	RAM_tb.v
+	+define+FSDB
+	+access+r
+file: RAM_tb.v
+	module worklib.RAM_tb:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.RAM:v <0x20629179>
+			streams:   4, words:  1883
+		worklib.RAM_tb:v <0x68b9445e>
+			streams:   7, words: 11333
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  2       2
+		Registers:                9       9
+		Scalar wires:             3       -
+		Vectored wires:           3       -
+		Always blocks:            3       3
+		Initial blocks:           4       4
+		Pseudo assignments:       1       1
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.RAM_tb:v
+Loading snapshot worklib.RAM_tb:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_N-2017.12, Linux x86_64/64bit, 11/12/2017
+(C) 1996 - 2017 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'RAM.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+                   0 RAM[    0]=xxxxxx, 
+                  50 RAM[    0]=000afc, 
+                  60 RAM[ 1887]=xxxxxx, 
+                  80 RAM[22453]=xxxxxx, 
+                 100 RAM[  308]=xxxxxx, 
+                 120 RAM[   74]=xxxxxx, 
+                 140 RAM[  299]=xxxxxx, 
+                 160 RAM[   51]=xxxxxx, 
+                 180 RAM[16388]=xxxxxx, 
+                 200 RAM[65535]=xxxxxx, 
+Simulation complete via $finish(1) at time 220 NS + 0
+./RAM_tb.v:39     #20 $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Mar 27, 2019 at 18:13:46 CST  (total: 00:00:01)

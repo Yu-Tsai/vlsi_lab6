@@ -1,0 +1,111 @@
+ncsim(64) 15.20-s039
+Linux 3.10.0-862.9.1.el7.x86_64 #1 SMP Mon Jul 16 16:29:36 UTC 2018 x86_64
+CPU cores: 16
+Limit information:
+======================================
+cputime			unlimited
+filesize		unlimited
+datasize		unlimited
+stacksize		8192 kbytes
+coredumpsize	0 kbytes
+memoryuse		unlimited
+vmemoryuse		unlimited
+descriptors		4096
+memorylocked	64 kbytes
+maxproc			4096
+======================================
+(Special)Runtime environment variables:
+
+Runtime environment variables:
+USER=vcad1968
+LOGNAME=vcad1968
+HOME=/home/user2/vcad19/vcad1968
+PATH=/usr/cad/cadence/INCISIV/cur/tools/bin/64bit:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/cad/sigasi/sigasi:/opt/RISCV/bin:/usr/cad/syntest/syntest/cur/TurboScan/bin:/usr/cad/syntest/syntest/cur/TurboDFT/bin:/usr/cad/syntest/syntest/cur/TurboCheck-Gate/bin:/usr/cad/syntest/syntest/cur/TurboBSD/bin:/usr/cad/syntest/syntest/cur/TurboBIST-Memory/bin:/usr/cad/mentor/calibre/cur/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/JASPER/cur/bin:/usr/cad/cadence/CTOS/cur/tools.lnx86/bin:/usr/cad/cadence/MMSIM/cur/tools/dfII/bin:/usr/cad/cadence/MMSIM/cur/tools/bin:/usr/cad/cadence/IC/cur/tools/dfII/bin:/usr/cad/cadence/IC/cur/tools/dracula/bin:/usr/cad/cadence/IC/cur/tools/bin:/usr/cad/cadence/INCISIV/cur/tools/bin:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/bin:/usr/cad/cadence/INCISIV/cur/tools/dfII/bin:/usr/cad/cadence/EDI/cur/tools/celtic/bin:/usr/cad/cadence/EDI/cur/tools/plato/bin:/usr/cad/cadence/EDI/cur/tools/dfII/bin:/usr/cad/cadence/EDI/cur/tools/fe/bin:/usr/cad/cadence/EDI/cur/tools/cdsdoc/bin:/usr/cad/cadence/EDI/cur/tools/bin:/usr/cad/cadence/EDI/cur//tools/tlfUtil/bin:/usr/cad/cadence/INNOVUS/cur/tools/celtic/bin:/usr/cad/cadence/INNOVUS/cur/tools/plato/bin:/usr/cad/cadence/INNOVUS/cur/tools/dfII/bin:/usr/cad/cadence/INNOVUS/cur/tools/bin:/usr/cad/cadence/INNOVUS/cur//tools/tlfUtil/bin:/usr/bin/X11:/usr/cad/synopsys/coreconsultant/cur/bin:/usr/cad/synopsys/verdi/cur/bin:/usr/cad/synopsys/verdi/cur/nLint/bin:/usr/bin/X11:/usr/cad/synopsys/primetime/cur/amd64/syn/bin:/usr/bin/X11:/usr/cad/synopsys/primerail/cur/amd64/syn/bin:/usr/cad/synopsys/adp/cur/bin:/usr/cad/synopsys/laker/cur/bin:/usr/cad/synopsys/customexplorer/cur/bin:/usr/cad/synopsys/hspice/cur/hspice/bin:/usr/cad/synopsys/hspice/cur/hspice/GNU/linux64/gcc/bin:/usr/cad/synopsys/hspice/cur/hspice/linux64:/usr/bin:/usr/ucb/bin:/usr/bin/X11:/usr/cad/synopsys/coreConsultant/cur/bin:/usr/cad/synopsys/synthesis/cur/amd64/syn/bin:/usr/cad/synopsys/lc/cur/bin:/usr/cad/synopsys/lc/cur/bin:/usr/lib64/qt-3.3/bin:/home/user2/vcad19/vcad1968/perl5/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/cad/synopsys/dw_home/cur/bin
+MAIL=/var/spool/mail/vcad1968
+SHELL=/bin/tcsh
+SSH_CLIENT=140.116.49.120 50016 22
+SSH_CONNECTION=140.116.49.120 50016 192.168.100.8 22
+SSH_TTY=/dev/pts/17
+TERM=xterm
+DISPLAY=localhost:26.0
+SELINUX_ROLE_REQUESTED=
+SELINUX_LEVEL_REQUESTED=
+SELINUX_USE_CURRENT_RANGE=
+XDG_SESSION_ID=14051
+XDG_RUNTIME_DIR=/run/user/11415
+HOSTTYPE=x86_64-linux
+VENDOR=unknown
+OSTYPE=linux
+MACHTYPE=x86_64
+SHLVL=1
+PWD=/home/user2/vcad19/vcad1968/lab6/lab6-tmp/Lab6/LabA
+GROUP=student
+HOST=vlsicad8
+REMOTEHOST=140.116.49.120
+HOSTNAME=vlsicad8
+LS_COLORS=no=00:fi=00:di=00;34;01:ln=00;36:pi=40;33:so=00;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:ex=00;32:*.cmd=00;32:*.exe=00;32:*.com=00;32:*.btm=00;32:*.bat=00;32:*.sh=00;32:*.csh=00;32:*.tar=00;31:*.tgz=00;31:*.arj=00;31:*.taz=00;31:*.lzh=00;31:*.zip=00;31:*.z=00;31:*.Z=00;31:*.gz=00;31:*.bz2=00;31:*.bz=00;31:*.tz=00;31:*.rpm=00;31:*.cpio=00;31:*.jpg=00;35:*.gif=00;35:*.bmp=00;35:*.xbm=00;35:*.xpm=00;35:*.png=00;35:*.tif=00;35:
+KDEDIRS=/usr
+QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+PERL_HOMEDIR=1
+PERL_LOCAL_LIB_ROOT=/home/user2/vcad19/vcad1968/perl5
+PERL_MB_OPT=--install_base /home/user2/vcad19/vcad1968/perl5
+PERL_MM_OPT=INSTALL_BASE=/home/user2/vcad19/vcad1968/perl5
+PERL5LIB=/home/user2/vcad19/vcad1968/perl5/lib/perl5
+QT_GRAPHICSSYSTEM_CHECKED=1
+QTDIR=/usr/lib64/qt-3.3
+QTINC=/usr/lib64/qt-3.3/include
+QTLIB=/usr/lib64/qt-3.3/lib
+LM_LICENSE_FILE=27000@vlsicad8:2700@lsncku:1717@lsncku:5280@lsncku:5280@lscic:26585@lsncku:26585@lscic
+SYNOPSYS_LC_ROOT=/usr/cad/synopsys/lc/cur
+SYNTHESIS=/usr/cad/synopsys/synthesis/cur
+SYN_MAN_DIR=/usr/cad/synopsys/synthesis/cur/doc/syn/man
+MANPATH=/usr/cad/synopsys/synthesis/cur/doc/syn/man:/usr/cad/synopsys/coreconsultant/cur/doc/dware/man
+installdir=/usr/cad/synopsys/hspice/cur/hspice
+CMIARCH=RH_64
+mraarch=linux_64
+TMIARCH=RH_64
+HSP_HOME=/usr/cad/synopsys/hspice/cur/hspice
+SNPS_PLATFORM=linux64
+HSP_GCC=/usr/cad/synopsys/hspice/cur/hspice/GNU/linux64/gcc/bin/gcc -m64 
+SNPS_64=1
+HSP_GCC_VERSION=5.2.0
+LD_LIBRARY_PATH=/usr/lib:/usr/lib64:/lib:/lib64:/usr/local/systemc/cur/lib-linux64:/usr/local/systemc/systemc-2.3.1/lib-linux64::/usr/cad/cadence/CTOS/cur/tools.lnx86/lib:/usr/cad/cadence/MMSIM/cur/tools/lib:/usr/cad/cadence/IC/cur/tools/lib:/usr/cad/cadence/INCISIV/cur/tools/lib/64bit:/usr/cad/cadence/INCISIV/cur/tools/lib:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/lib:/usr/cad/cadence/EDI/cur//tools/tlfUtil/lib:/usr/cad/cadence/INNOVUS/cur//tools/tlfUtil/lib:/usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX64/:/usr/cad/synopsys/hspice/cur/hspice/linux64/interfaces
+CDS_LOAD_ENV=CSF
+Laker_TCL_L3=1
+Laker_TCL_ToolBox=1
+PRIMERAIL=/usr/cad/synopsys/primerail/cur
+PRIMETIME=/usr/cad/synopsys/primetime/cur
+SHLIB_PATH=/usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX64
+SOFT_MAN_DIR=/usr/cad/synopsys/coreconsultant/cur/doc/dware/man
+DESIGNWARE_HOME=/usr/cad/synopsys/dw_home/cur
+ENCOUNTER=/usr/cad/cadence/EDI/cur/tools/fe
+CDS_AUTO_64BIT=ALL
+CDS_Netlisting_Mode=Analog
+MGC_HOME=/usr/cad/mentor/calibre/cur
+MGC_TMPDIR=/tmp
+MGC_LOCATION_MAP=NO_MAP
+SYNTEST_LIB_PATH=/usr/cad/syntest/syntest/cur/TurboBSD/lib
+SYNTEST=/usr/cad/syntest/syntest/cur/TurboScan
+SYNTEST_TMP=.
+LANG=en_US.utf8
+_IRUNROOT_=/usr/cad/cadence/INCISIV/cur/tools
+CDS_ARCH=lnx86
+NCRUNMODE=ncverilog:./INCA_libs/irun.lnx8664.15.20.nc
+IRUNBATCH=FALSE
+IMPERAS_PORT_FILE=.vsp_ovp_gdb_port
+TCL_LIBRARY=/usr/cad/cadence/INCISIV/cur/tools/inca/files/tcl/library
+Runtime command line arguments:
+argv[0]=ncverilog
+argv[1]=moore_tb.v
+100 profile - 100
+          CPU/Mem usage: 0.100 sys,  0.040 user,  267.43M sys,  0.00M vm
+101 VC callback profile - scalar:0 vector:0
+102 Wed Mar 27 17:38:21 2019
+103 pliAppInit
+104 FSDB_GATE is disabled.
+105 Enable Parallel Dumping.
+106 pliAppMiscSet: New Sim Round
+107 pliEntryInit
+108 LIBSSCORE=found /usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX64/libsscore_ius152.so through $LD_LIBRARY_PATH setting.
+109 Sim process exit
