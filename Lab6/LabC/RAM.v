@@ -11,8 +11,6 @@
 
 module RAM (CK, A, WE, OE, D, Q);
 
-/*Please rewrite this example code according to the assignment*/
-
   input         CK;
   input  [`ramsize-1:0]  A;
   input         WE;
@@ -22,7 +20,7 @@ module RAM (CK, A, WE, OE, D, Q);
 
   reg    [`wordsize-1:0] Q;
   reg    [`ramsize-1:0]  latched_A;
-  reg    [`wordsize-1:0] memory [0:`ramsize-1];
+  reg    [`wordsize-1:0] memory [0:65536];
 
   always @(posedge CK) begin
     if (WE) begin

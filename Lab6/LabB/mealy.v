@@ -23,13 +23,13 @@ module mealy (clk, rst, din, qout);
 
   always @(posedge clk or posedge rst) begin
     if (rst)
-	
+    
       cs <= s0;
-	  
+      
     else
-	
+    
       cs <= ns;
-	  
+      
   end
 
   always @(cs or din) begin//ns case
@@ -38,6 +38,7 @@ module mealy (clk, rst, din, qout);
       s0: ns = din?s1:s2;
       s1: ns = din?s1:s2;
       s2: ns = din?s2:s0;
+      default: ns = s0;
     endcase
   end
 
@@ -47,6 +48,7 @@ module mealy (clk, rst, din, qout);
       s0: qout = 1'b0;
       s1: qout = din? 1'b1:1'b0;
       s2: qout = din? 1'b0:1'b1;
+      default: qout = 1'b0;
     endcase
   end
 

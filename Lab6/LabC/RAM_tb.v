@@ -21,7 +21,7 @@ module RAM_tb;
   always #10 clk=~clk;
   initial begin
         read_enable=1'b0; write_enable=1'b0; address=16'd0; data_in=24'h0;
-    //#20 read_enable=1'b0; write_enable=1'b0;
+    #20 read_enable=1'b0; write_enable=1'b0;
     #20 write_enable=1'b1; address = 16'd0; data_in=24'h00_0afc;
     #20 write_enable=1'b1; address = 16'd1887; data_in=24'h00_b031;
     #20 write_enable=1'b1; address = 16'd22453; data_in=24'hf0_0005;
