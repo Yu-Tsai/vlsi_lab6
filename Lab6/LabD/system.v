@@ -26,12 +26,19 @@ module system (clk, rst, ROM_Q, RAM_Q, ROM_A,
 
   MixColor m1 (
     .color_in1(ROM_Q),
-    // You should complete this part
+    .color_in2(RAM_Q),
+	.color_out(RAM_D)
   );
 
   Controller c1 (
     .clk(clk),
-    // You should complete this part
+    .rst(rst),
+	.ROM_A(ROM_A),
+	.ROM_OE(ROM_OE),
+    .RAM_A(RAM_A),
+	.RAM_WE(RAM_WE),
+	.RAM_OE(RAM_OE),
+	.done(done)
   );
 
 endmodule

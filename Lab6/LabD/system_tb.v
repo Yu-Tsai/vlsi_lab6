@@ -51,17 +51,24 @@ module system_tb;
 
   system sys1 (
     .clk(clk),
-    // You should complete this part
+    .rst(rst),
+	.ROM_Q(RAM_Q),
+	.RAM_Q(RAM_Q),
+	.ROM_A(ROM_A),
+    .ROM_OE(ROM_OE),
+	.RAM_A(RAM_A),
+	.RAM_WE(RAM_WE),
+	.RAM_OE(RAM_OE),
+	.RAM_D(RAM_D),
+	.done(done)
   );
 
   ROM rom1 (
-    .CK(clk),
-    // You should complete this part
+    .CK(clk), .A(ROM_A), .OE(ROM_OE), .Q(ROM_Q)    
   );
 
   RAM ram1 (
-    .CK(clk),
-    // You should complete this part
+    .CK(clk), .A(RAM_A), .WE(RAM_WE), .OE(RAM_OE), .D(RAM_D), .Q(RAM_Q)
   );
 
   always #(`PERIOD/2) clk = ~clk;
