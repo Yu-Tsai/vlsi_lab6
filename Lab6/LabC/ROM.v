@@ -18,7 +18,7 @@ module ROM (CK, A, OE, Q);
 
   reg    [`wordsize-1:0] Q;
   reg    [`romsize-1:0]  latched_A;
-  reg    [`wordsize-1:0] memory [0:`romsize-1];
+  reg    [`wordsize-1:0] memory [0:16383];
 
   always @(posedge CK) begin
     latched_A <= A;

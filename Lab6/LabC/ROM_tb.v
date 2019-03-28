@@ -7,6 +7,9 @@
 
 `timescale 1ns/10ps
 `include "ROM.v"
+`define romsize 14
+`define wordsize 24
+
 module ROM_tb;
 
 /*Please rewrite this example code according to the assignment*/
@@ -14,8 +17,8 @@ module ROM_tb;
   reg         clk;
   reg         rst;
   reg         read_enable;
-  reg  [3:0]  address;
-  wire [15:0] data_out;
+  reg  [`romsize-1:0]  address;
+  wire [`wordsize-1:0] data_out;
 
   ROM rom1 (clk, address, read_enable, data_out);
 
@@ -27,7 +30,11 @@ module ROM_tb;
         read_enable = 0; address = 4'd0;
     #20 rst = 1;
     #40 rst = 0; read_enable = 1;
-    // Please add some test pattern to verify your module
+    #20;
+	for(i=16368;i<16384;i=i+1) begin
+	  address=i;
+	  #20;
+	end
 
   end
 
